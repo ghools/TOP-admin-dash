@@ -1,9 +1,135 @@
+/* Emerald Color Scheme on Tailwind */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+input{
+    background-color: #e5e7eb;
+    flex-grow: 1;
+    min-width: 200px;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 5px;
 }
 
 .container {
     display: grid;
+    background-color: #ecfdf5;
+    grid-template-columns: 20vw 80%;
+    grid-template-rows: 20vh 80%;
+
+}
+.container .header {
+    display: flex;
+    flex-direction: column;
+    grid-row-start: 1;
+    grid-column-start: 2;
+
+}
+
+.headerpart {
+    display: flex;
+    align-items: center;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 5%;
+
+}
+
+.icon {
+    height: 32px;
+    width: 32px;
+    padding: 3px;
+    margin: 10px;
+}
+
+.small-icon{
+    height: 32px;
+    width: 32px;
+    margin: 10px;
+    border-radius: 45px;
+}
+
+.large-icon {
+    height: 64px;
+    width: 64px;
+    border-radius: 45px;
+    margin: 10px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    min-width: none;
+}
+
+.but {
+    margin: 15px;
+    padding: 10px;
+    background-color: #10b981;
+    border-radius: 30px;
+    color: #ecfdf5;
+    flex-grow: 1;
+    font-weight: bold;
+}
+.top-text {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.bot-text {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5pxx;
+    padding: 5px;
+}
+
+.head-name{
+    margin: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: #10b981;
+    grid-row: 1 / -1;
+}
+
+.sidebar-top {
+    display: flex;
+    align-items: center;
+
+}
+
+.dash-icon {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+}
+
+.side-title{
+    color: #ecfdf5;
+    font-weight: bolder;
+    font-size: larger;
+    padding: 10px;
+    margin: 3%;
+}
+
+.maindash{
+    background-color: #e5e7eb;
+    grid-column-start: 2;
 }
