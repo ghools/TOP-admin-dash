@@ -28,6 +28,10 @@ input{
     flex-direction: column;
     grid-row-start: 1;
     grid-column-start: 2;
+    box-shadow: 10px 1px 3px;
+    position: relative;
+    z-index: 10;
+
 
 }
 
@@ -45,9 +49,9 @@ input{
 }
 
 .icon {
-    height: 32px;
-    width: 32px;
-    padding: 3px;
+    height: 40px;
+    width: 40px;
+    padding: 5px;
     margin: 10px;
 }
 
@@ -128,6 +132,17 @@ input{
     padding: 10px;
     margin: 3%;
 }
+
+.dashCard {
+    display: flex;
+    align-items: center;
+}
+
+.dashCard div {
+    font-weight: bold;
+    color:#ecfdf5
+}
+
 
 .maindash{
     background-color: #e5e7eb;
