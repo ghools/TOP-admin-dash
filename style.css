@@ -19,8 +19,8 @@ input{
 .container {
     display: grid;
     background-color: #ecfdf5;
-    grid-template-columns: 20vw 80%;
-    grid-template-rows: 20vh 80%;
+    grid-template-columns: 15vw 85vw;
+    grid-template-rows: 20vh 80vh;
 
 }
 .container .header {
@@ -29,10 +29,6 @@ input{
     grid-row-start: 1;
     grid-column-start: 2;
     box-shadow: 10px 1px 3px;
-    position: relative;
-    z-index: 10;
-
-
 }
 
 .headerpart {
@@ -84,6 +80,7 @@ input{
     color: #ecfdf5;
     flex-grow: 1;
     font-weight: bold;
+    max-width: 140px;
 }
 .top-text {
     font-size: 14px;
@@ -111,11 +108,13 @@ input{
     flex-direction: column;
     background-color: #10b981;
     grid-row: 1 / -1;
+    min-width: 15vw;
 }
 
 .sidebar-top {
     display: flex;
     align-items: center;
+    margin-bottom: 10vh;
 
 }
 
@@ -123,6 +122,10 @@ input{
     width: 60px;
     height: 60px;
     padding: 10px;
+}
+
+.dashGroup {
+    margin-bottom: 15vh;
 }
 
 .side-title{
@@ -139,7 +142,8 @@ input{
 }
 
 .dashCard div {
-    font-weight: bold;
+    font-weight: bolder;
+    font-size: large;
     color:#ecfdf5
 }
 
@@ -147,4 +151,27 @@ input{
 .maindash{
     background-color: #e5e7eb;
     grid-column-start: 2;
+    display: grid;
+    grid-template-columns: 85% 15%;
+}
+
+
+.projects {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 12rem 12rem 12rem;
+}
+
+
+.card {
+    display: flex;
+    width: 40%;
+    height: 33%;
+}
+
+.projTitle {
+    padding: 7px;
+    margin: 15px;
+    font-size: larger;
+    font-weight: bolder;
 }
