@@ -154,6 +154,7 @@ input{
     grid-column-start: 2;
     display: grid;
     grid-template-columns: 85% 15%;
+    overflow: auto;
 }
 
 
@@ -217,7 +218,7 @@ input{
     margin: 15px;
     margin-left: 0px;
     box-shadow: 7px 7px 3px rgba(0, 0, 0, 0.633);
-    
+
 }
 
 .announcementsTitle{
@@ -232,4 +233,22 @@ input{
 .announcePost {
     padding: 5px;
     margin: 10px;
+}
+
+.announcePost.middle {
+    border-top: 3px solid rgba(128, 128, 128, 0.24);
+    border-bottom: 3px solid rgba(128, 128, 128, 0.24);
+    border-radius: 5px;
+}
+
+.announcePost .title {
+    font-weight: bold;
+    font-size: large;
+    padding: 2px;
+    margin: 2px
+}
+
+.announcePost .content {
+    padding: 2px;
+
 }
